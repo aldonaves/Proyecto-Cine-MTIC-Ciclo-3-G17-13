@@ -20,6 +20,7 @@
   <li>Leidy Jaimes</li>
   <li>Aldo Navarro</li>
   <li>Maria Paula</li>
+  <li>Sebastian Gomez</li>
 </ul>
 
 MTIC Ciclo 3 <br/>
