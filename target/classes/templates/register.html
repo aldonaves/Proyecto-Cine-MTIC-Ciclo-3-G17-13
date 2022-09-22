@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Muhamad Nauval Azhar" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="This is a login page template based on Bootstrap 5"
+    />
+    <title>Register CineTic</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="container mb-5">
+        <div class="row justify-content-sm-center h-100">
+          <div class="col-xl-5 col-lg-5 col-md-7 col-sm-8">
+            <div class="text-center my-2">
+              <img
+                src="https://img.icons8.com/external-justicon-lineal-justicon/344/external-film-photography-justicon-lineal-justicon.png"
+                alt="logo"
+                width="100"
+              />
+            </div>
+            <div class="card shadow-lg w-300">
+              <div class="card-body p-5">
+                <form method="POST" class="" autocomplete="off">
+                  <div class="row">
+                    <div class="col">
+                      <label class="mb-2 text-muted" for="name"
+                        >Nombre(s)</label
+                      >
+                      <input
+                        id="name"
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        value=""
+                        required
+                        autofocus
+                      />
+                    </div>
+                    <div class="col">
+                      <label class="mb-2 text-muted" for="name"
+                        >Apellido(s)</label
+                      >
+                      <input
+                        id="name"
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        value=""
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mb-3 mt-3">
+                    <label class="mb-2 text-muted" for="email">Email</label>
+                    <input
+                      id="email"
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      value=""
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="mb-2 text-muted" for="password">Pais</label>
+                    <br />
+                    <select class="form-select">
+                      <option selected value="colombia">Colombia</option>
+                      <option value="brasil">Brasil</option>
+                      <option value="usa">USA</option>
+                      <option value="alemania">Alemania</option>
+                    </select>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <label class="mb-2 text-muted" for="password"
+                        >Contraseña</label
+                      >
+                      <input
+                        id="password"
+                        type="password"
+                        class="form-control"
+                        name="password"
+                        required
+                      />
+                    </div>
+                    <div class="col">
+                      <label class="mb-2 text-muted" for="password"
+                        >Confirmar Contraseña</label
+                      >
+                      <input
+                        id="password"
+                        type="password"
+                        class="form-control"
+                        name="password"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <p class="form-text text-muted mb-3 mt-4">
+                    Al registrarte estás aceptando nuestros terminos y
+                    condiciones.
+                  </p>
+
+                  <div class="align-items-center d-flex justify-content-center">
+                    <button
+                      type="submit"
+                      class="btn btn-primary w-50 p-2 rounded-pill btn_register"
+                    >
+                      Registrar
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer py-3 border-0">
+                <div class="text-center">
+                  Ya tienes una cuenta?
+                  <a th:href="@{login}" class="text-dark">Login</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/login.js"></script>
+  </body>
+</html>
